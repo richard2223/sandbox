@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="414.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="za.co.absa.bas.fx.controller.BASController">
+   <children>
+      <Button fx:id="upload" layoutX="470.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleUploadAction" text="Upload BAS File" />
+      <Button fx:id="generate" layoutX="14.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleGenerateAction" text="Generate File" />
+      <TableView fx:id="fileTable" layoutX="14.0" layoutY="59.0" prefHeight="300.0" prefWidth="572.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
